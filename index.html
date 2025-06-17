@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eclora - الرئيسية | المغامرة تبدأ هنا</title> <meta name="description" content="Eclora هو سيرفر ماينكرافت عربي يجمع بين الاقتصاد المتوازن، الفعاليات الأسبوعية، ونظام حماية الأراضي. انضم إلينا اليوم لخوض مغامرة لا تُنسى!" /> <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* الخطوط الأساسية للصفحة */
+    body {
+      font-family: 'Inter', 'Cairo', sans-serif;
+    }
+    /* تأثير انتقال ناعم على الأزرار والروابط */
+    .transition-colors-transform {
+      transition: all 0.3s ease-in-out;
+    }
+    /* خلفية متدرجة للقسم الرئيسي */
+    .hero-bg-gradient {
+      background: linear-gradient(to bottom, #0a0a0a, #1a202c); /* ألوان داكنة للبداية ثم أزرق غامق */
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <nav class="flex justify-between items-center px-6 py-4 bg-black/80 backdrop-blur-sm shadow-lg fixed w-full z-10 top-0">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="eclora_logo-removebg-preview.png" alt="Eclora Logo" class="h-10 w-10"> <h1 class="text-3xl font-bold text-blue-400">Eclora</h1>
+    </a>
+    <ul class="flex gap-6">
+      <li><a href="index.html" class="text-blue-300 font-semibold transition-colors-transform hover:text-blue-100">الرئيسية</a></li>
+      <li><a href="features.html" class="hover:text-blue-300 transition-colors-transform">المميزات</a></li>
+      <li><a href="gallery.html" class="hover:text-blue-300 transition-colors-transform">المعرض</a></li>
+      <li><a href="map.html" class="hover:text-blue-300 transition-colors-transform">الخريطة</a></li>
+      <li><a href="discord.html" class="hover:text-blue-300 transition-colors-transform">ديسكورد</a></li>
+    </ul>
+  </nav>
+
+  <section class="text-center py-32 px-6 hero-bg-gradient min-h-screen flex flex-col justify-center items-center">
+    <h2 class="text-6xl md:text-7xl font-extrabold text-white mb-6 animate-pulse">مرحبًا بك في Eclora</h2> <p class="text-xl md:text-2xl text-gray-300 mb-8">حيث تبدأ مغامرتك الملحمية في عالم ماينكرافت. انضم إلينا اليوم!</p>
+    
+    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-blue-700 shadow-xl mb-12 max-w-xl w-full">
+      <h3 class="text-3xl font-bold text-blue-300 mb-4">انضم إلى مغامرتنا!</h3>
+      <div class="mb-4">
+        <p class="text-lg text-gray-200">إصدار Java:</p>
+        <div class="flex justify-center items-center gap-2">
+          <code class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md font-mono text-xl select-all">play.ecloramc.xyz</code>
+          <button onclick="copyToClipboard('play.ecloramc.xyz')" class="bg-blue-600 hover:bg-blue-500 active:bg-blue-700 px-4 py-2 rounded-full font-semibold text-lg transition-colors-transform">
+            📋 انسخ IP
+          </button>
+        </div>
+      </div>
+      <div>
+        <p class="text-lg text-gray-200">إصدار Bedrock:</p>
+        <div class="flex justify-center items-center gap-2">
+          <code class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md font-mono text-xl select-all">play.ecloramc.xyz:<span class="text-green-400">19321</span></code>
+          <button onclick="copyToClipboard('play.ecloramc.xyz:19321')" class="bg-blue-600 hover:bg-blue-500 active:bg-blue-700 px-4 py-2 rounded-full font-semibold text-lg transition-colors-transform">
+            📋 انسخ IP & Port
+          </button>
+        </div>
+      </div>
+      <p class="text-sm text-gray-400 mt-4"> (البورت لـ Bedrock هو 19321)</p>
+    </div>
+
+    <div class="flex justify-center gap-6">
+      <a href="https://discord.gg/eclora" target="_blank" class="bg-purple-600 hover:bg-purple-500 active:bg-purple-700 text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-colors-transform flex items-center gap-2">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.2 6.5C18.6 5.3 16.9 4.4 15.1 3.8C14.7 3.7 14.3 3.9 14.1 4.3L13.1 6.5C13 6.7 13.1 6.9 13.3 7C14.4 7.6 15.4 8.2 16.3 9C16.5 9.1 16.5 9.4 16.3 9.5C15.6 10.3 14.8 11.2 14.1 12C14 12.2 14 12.4 14.2 12.5C14.7 12.8 15.2 13.2 15.7 13.6C15.9 13.7 15.9 14 15.7 14.1C14.5 15.1 13.4 16 12.2 17C12 17.2 11.7 17.2 11.5 17C10.3 16 9.2 15.1 8 14.1C7.8 14 7.8 13.7 8 13.6C8.5 13.2 9 12.8 9.5 12.5C9.7 12.4 9.7 12.2 9.6 12C8.9 11.2 8.1 10.3 7.4 9.5C7.2 9.4 7.2 9.1 7.4 9C8.3 8.2 9.3 7.6 10.4 7C10.6 6.9 10.7 6.7 10.6 6.5L9.6 4.3C9.4 3.9 9 3.7 8.6 3.8C6.8 4.4 5.1 5.3 3.5 6.5C3.1 6.8 2.8 7.3 2.8 7.9C2.8 14.6 6.8 18.7 12 21.2C17.2 18.7 21.2 14.6 21.2 7.9C21.2 7.3 20.9 6.8 20.2 6.5Z"></path></svg>
+        انضم إلى ديسكورد
+      </a>
+      <a href="features.html" class="bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-colors-transform">
+        اكتشف مميزاتنا
+      </a>
+    </div>
+  </section>
+
+  <section class="py-20 px-6 bg-gray-900 text-center">
+    <h2 class="text-4xl font-extrabold text-blue-400 mb-8">💡 نبذة عن Eclora</h2>
+    <div class="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed">
+      <p class="mb-4">Eclora ليست مجرد سيرفر ماينكرافت، بل هي مجتمع متكامل للاعبين الشغوفين. نهدف إلى تقديم تجربة فريدة ومستقرة، حيث يمكنك بناء إمبراطوريتك، استكشاف عوالم جديدة، والمشاركة في فعاليات مثيرة.</p>
+      <p>مع نظام اقتصادي متوازن، رتب حصرية، وفعاليات أسبوعية مليئة بالمرح، نضمن لك مغامرة لا تُنسى وفرصًا لا حصر لها للتفاعل مع لاعبين آخرين.</p>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 bg-black border-t border-gray-700">
+    <p class="text-gray-400">© 2025 Eclora Server. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    // وظيفة نسخ النص إلى الحافظة
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("تم نسخ IP السيرفر: " + text); // تنبيه للمستخدم
+      }).catch(err => {
+        console.error('فشل في نسخ النص: ', err);
+      });
+    }
+  </script>
+</body>
+</html>

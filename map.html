@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eclora - خريطة العالم | Dynmap</title>
+  <meta name="description" content="استكشف عالم Eclora Minecraft بالكامل عبر خريطة Dynmap التفاعلية الخاصة بالسيرفر." />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', 'Cairo', sans-serif;
+    }
+    .map-bg-gradient {
+      background: linear-gradient(to bottom, #0a0a0a, #0a202a); /* ألوان داكنة للبداية ثم أزرق غامق جداً */
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <nav class="flex justify-between items-center px-6 py-4 bg-black/80 backdrop-blur-sm shadow-lg fixed w-full z-10 top-0">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="eclora_logo-removebg-preview.png" alt="Eclora Logo" class="h-10 w-10">
+      <h1 class="text-3xl font-bold text-blue-400">Eclora</h1>
+    </a>
+    <ul class="flex gap-6">
+      <li><a href="index.html" class="hover:text-blue-300 transition-colors-transform">الرئيسية</a></li>
+      <li><a href="features.html" class="hover:text-blue-300 transition-colors-transform">المميزات</a></li>
+      <li><a href="gallery.html" class="hover:text-blue-300 transition-colors-transform">المعرض</a></li>
+      <li><a href="map.html" class="text-blue-300 font-semibold transition-colors-transform hover:text-blue-100">الخريطة</a></li>
+      <li><a href="discord.html" class="hover:text-blue-300 transition-colors-transform">ديسكورد</a></li>
+    </ul>
+  </nav>
+
+  <section class="px-6 py-20 pt-32 map-bg-gradient min-h-screen text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-8">
+      🗺️ خريطة عالم Eclora | Dynmap
+    </h2>
+    <p class="text-xl text-gray-300 mb-6 max-w-2xl mx-auto">
+      استكشف كل زاوية من عالمنا الشاسع عبر خريطة Dynmap التفاعلية. شاهد أراضي اللاعبين، المباني الرائعة، والمناطق الطبيعية الخلابة!
+    </p>
+
+    <div class="bg-yellow-900/20 border border-yellow-700 p-6 rounded-lg mb-12 max-w-3xl mx-auto">
+      <p class="text-yellow-200 text-lg">
+        <span class="font-bold">تنبيه:</span> الخريطة قيد التحديث أو التفعيل. إذا لم تظهر الخريطة، يرجى المحاولة مرة أخرى لاحقًا أو التواصل مع الدعم الفني في ديسكورد.
+      </p>
+    </div>
+
+    <div class="max-w-6xl mx-auto border-4 border-blue-800 rounded-xl shadow-2xl overflow-hidden">
+      <iframe 
+        src="http://play.ecloramc.xyz:8123/" 
+        class="w-full h-[70vh] min-h-[500px]" 
+        title="Eclora Dynmap"
+        loading="lazy"> </iframe>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 bg-black border-t border-gray-700">
+    <p class="text-gray-400">© 2025 Eclora Server. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>

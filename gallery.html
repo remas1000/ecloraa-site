@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eclora - معرض الصور | لقطات من عالمنا</title>
+  <meta name="description" content="تصفح معرض صور Eclora لترى لقطات من اللعب، المباني، والفعاليات داخل سيرفر ماينكرافت." />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', 'Cairo', sans-serif;
+    }
+    .gallery-img {
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .gallery-img:hover {
+      transform: scale(1.03); /* تكبير بسيط عند التحويم */
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    }
+    .gallery-bg-gradient {
+      background: linear-gradient(to bottom, #0a0a0a, #150a30); /* ألوان داكنة للبداية ثم أزرق بنفسجي غامق */
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <nav class="flex justify-between items-center px-6 py-4 bg-black/80 backdrop-blur-sm shadow-lg fixed w-full z-10 top-0">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="eclora_logo-removebg-preview.png" alt="Eclora Logo" class="h-10 w-10">
+      <h1 class="text-3xl font-bold text-blue-400">Eclora</h1>
+    </a>
+    <ul class="flex gap-6">
+      <li><a href="index.html" class="hover:text-blue-300 transition-colors-transform">الرئيسية</a></li>
+      <li><a href="features.html" class="hover:text-blue-300 transition-colors-transform">المميزات</a></li>
+      <li><a href="gallery.html" class="text-blue-300 font-semibold transition-colors-transform hover:text-blue-100">المعرض</a></li>
+      <li><a href="map.html" class="hover:text-blue-300 transition-colors-transform">الخريطة</a></li>
+      <li><a href="discord.html" class="hover:text-blue-300 transition-colors-transform">ديسكورد</a></li>
+    </ul>
+  </nav>
+  
+  <section class="px-6 py-20 pt-32 gallery-bg-gradient min-h-screen text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-8">
+      📸 معرض Eclora | لقطات من عالمنا
+    </h2>
+    <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+      استكشف جمال عالم Eclora من خلال هذه اللقطات الساحرة من اللعب، المباني، والفعاليات المثيرة.
+    </p>
+
+    <div class="bg-white/10 border border-blue-700 p-6 rounded-lg mb-12 max-w-3xl mx-auto">
+      <p class="text-blue-200 text-lg">
+        <span class="font-bold">ملاحظة هامة:</span> هذه الصور هي صور توضيحية. يرجى استبدالها بصور حقيقية من سيرفر Eclora الخاص بك لجعل المعرض احترافيًا بالكامل!
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+      <div class="relative group">
+        <img src="https://placehold.co/600x400/1e293b/a5f3fc?text=Eclora+Scene+1" alt="Eclora Scene 1" class="rounded-lg shadow-lg border border-blue-800 gallery-img" />
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+          <p class="text-white text-lg font-semibold">مبنى أسطوري</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="https://placehold.co/600x400/1e293b/a5f3fc?text=Eclora+Event+2" alt="Eclora Event 2" class="rounded-lg shadow-lg border border-blue-800 gallery-img" />
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+          <p class="text-white text-lg font-semibold">فعالية ممتعة</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="https://placehold.co/600x400/1e293b/a5f3fc?text=Eclora+PVP+3" alt="Eclora PVP 3" class="rounded-lg shadow-lg border border-blue-800 gallery-img" />
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+          <p class="text-white text-lg font-semibold">تحدي PvP</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="https://placehold.co/600x400/1e293b/a5f3fc?text=Eclora+Town+4" alt="Eclora Town 4" class="rounded-lg shadow-lg border border-blue-800 gallery-img" />
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+          <p class="text-white text-lg font-semibold">مدينة مزدهرة</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="https://placehold.co/600x400/1e293b/a5f3fc?text=Eclora+Biome+5" alt="Eclora Biome 5" class="rounded-lg shadow-lg border border-blue-800 gallery-img" />
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+          <p class="text-white text-lg font-semibold">مناظر طبيعية</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="https://placehold.co/600x400/1e293b/a5f3fc?text=Eclora+Community+6" alt="Eclora Community 6" class="rounded-lg shadow-lg border border-blue-800 gallery-img" />
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+          <p class="text-white text-lg font-semibold">مجتمعنا الرائع</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="text-center py-6 bg-black border-t border-gray-700">
+    <p class="text-gray-400">© 2025 Eclora Server. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>
